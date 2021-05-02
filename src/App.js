@@ -1,7 +1,5 @@
 import React from "react"
 
-import './App.css';
-
 // Algorithms 
 import bubbleSort from "./Algorithms/BubbleSort"
 import heapSort from "./Algorithms/HeapSort"
