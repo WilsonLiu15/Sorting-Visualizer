@@ -1,0 +1,47 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  text-align: center;
+  width: 100vw;
+  height: 8vh;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fa-instagram, .fa-facebook-square, .fa-envelope, .fa-linkedin, .fa-github-square {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -webkit-transition: color 500ms ease-in -500ms, -webkit-transform 300ms ease-in -300ms;
+  transition: color 500ms ease-in -500ms, -webkit-transform 300ms ease-in -300ms;
+  transition: transform 300ms ease-in -300ms, color 500ms ease-in -500ms;
+  transition: transform 300ms ease-in -300ms, color 500ms ease-in -500ms, -webkit-transform 300ms ease-in -300ms;
+  padding: 0.2em 0 0 0;
+}
+
+.fa-instagram:hover, .fa-facebook-square:hover, .fa-envelope:hover, .fa-linkedin:hover, .fa-github-square:hover {
+  color: #15FFFF;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#connect-title {
+  font-family: serif;
+  letter-spacing: 0.05em;
+  padding: .3em;
+  margin: 0 0;
+  color: #00ccff;
+  font-size: 3.0rem;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Footer.css.map */

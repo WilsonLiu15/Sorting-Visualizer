@@ -1,0 +1,36 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+.social-media{
+    display:flex;
+    padding: 0.3em;
+    justify-content: space-evenly;
+
+}
+
+.fa-instagram, .fa-facebook-square, .fa-envelope, .fa-linkedin, .fa-github-square{
+    justify-content: center;
+    color: white;
+    transition: transform 300ms ease-in -300ms, color 500ms ease-in -500ms; 
+    padding: 0.2em 0 0 0;
+    &:hover {
+        color:#15FFFF;
+        transform: scale(1.15);
+    }
+}
+
+#connect-title {
+    font-family: serif;
+    letter-spacing:0.05em;
+    padding: .3em;
+    margin: 0 0;
+    color: #00ccff;
+    font-size: 3.0rem;
+    text-decoration: none;
+}
