@@ -1,11 +1,11 @@
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color: #181c1f;
     text-align: center;
     width: 100vw;
-    height: 8vh;
-    box-shadow: #00B2FF 0 0 0 0.1em;
+    height: 4.5em;
+    border-top: 0.1em #00B2FF solid;
 }
 
 
@@ -23,5 +23,17 @@ footer{
     &:hover {
         color:#15FFFF;
         transform: scale(1.15);
+    }
+}
+
+@media(max-width: 920px){ 
+    footer {
+        margin-top: 1.5em;
+    }
+}
+
+@media(max-width: 540px){ 
+    footer {
+        margin-top: 5.5em;
     }
 }
