@@ -1,0 +1,67 @@
+:root {
+    --buttonColor:aqua;
+}
+
+.custom-select {
+    position: relative;
+    display:inline-flex;
+}
+
+select {
+    width: 10em;
+    border: none;
+    padding: 0.5em 0 0.5em 0.5em;
+    text-align: center;
+    background-color: transparent;
+    letter-spacing: 0.05rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    border-radius:  0.45em;
+    transition: 0.5s;
+    text-shadow: 1px 2px 4px;
+    margin: 0 0.6em 0 0.8em;
+
+    color: var(--buttonColor);
+    border: var(--buttonColor) 0.2em solid ;
+    box-shadow: 0 0 0.1em var(--buttonColor), 0 0 0.3em var(--buttonColor);
+    outline: none;
+
+    &:hover{
+        color: black;
+        background-color: var(--buttonColor);
+        box-shadow: 0 0 0.5em var(--buttonColor), 0 0 0.7em var(--buttonColor), 0 0 1.10em var(--buttonColor);
+    }
+  }
+
+option {
+    background-color: var(--buttonColor);
+    color: black;
+}
+
+@media(max-width: 920px){
+    select {
+        padding: 0.5em;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 600px){
+    select {
+        padding: 0.5em 0.0em;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 490px){
+        select {
+        padding: 1em 0em;
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width: 380px){
+    select {
+        padding: 0.6em 0em;
+        width: 10em;
+    }
+}
