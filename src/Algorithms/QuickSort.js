@@ -12,11 +12,12 @@
 const partition = (dupBlocks, start, end, order) => {
     let pivotSpot = start 
     const pivot = start
-
+    order.push([null, null, null, null, pivotSpot])
     for (let i = pivot+1; i <= end; i++) {
         order.push([i, pivot, null, null])
         if (dupBlocks[pivot] > dupBlocks[i]) {
             pivotSpot++
+            order.push ([null, null, null, null, pivotSpot])
             swap (pivotSpot, i, dupBlocks)
             order.push ([pivotSpot, i, dupBlocks.slice(), null, pivotSpot])
         }
