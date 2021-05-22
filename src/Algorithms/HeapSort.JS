@@ -47,7 +47,7 @@ const heapify = (dupBlocks, startNode, endNode, order) => {
         maxVal = rightNode;
     }
 
-    if (maxVal != startNode) {
+    if (maxVal !== startNode) {
         swap(dupBlocks, startNode, maxVal)
         order.push([startNode, maxVal, null, null])
         order.push([startNode, maxVal, dupBlocks.slice(), null])
