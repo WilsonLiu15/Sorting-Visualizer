@@ -1,0 +1,78 @@
+:root {
+  --buttonColor: orange;
+}
+
+.glowButton {
+  margin: auto, 0;
+}
+
+.myButton {
+  border: none;
+  padding: 0.5em 1.0em 0.5em 0.5em;
+  text-align: center;
+  background-color: transparent;
+  letter-spacing: 0.05rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 0.45em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-shadow: 1px 2px 4px;
+  color: var(--buttonColor);
+  border: var(--buttonColor) 0.2em solid;
+  -webkit-box-shadow: 0 0 0.1em var(--buttonColor), 0 0 0.3em var(--buttonColor);
+          box-shadow: 0 0 0.1em var(--buttonColor), 0 0 0.3em var(--buttonColor);
+}
+
+.myButton.lime {
+  --buttonColor: rgb(136, 255, 0);
+  margin: 0 0.6em 0 0.8em;
+}
+
+.myButton.aqua {
+  --buttonColor: aqua;
+  margin: 0 0.3em;
+}
+
+.myButton:hover {
+  color: black;
+  background-color: var(--buttonColor);
+  -webkit-box-shadow: 0 0 0.5em var(--buttonColor), 0 0 0.7em var(--buttonColor), 0 0 1.1em var(--buttonColor);
+          box-shadow: 0 0 0.5em var(--buttonColor), 0 0 0.7em var(--buttonColor), 0 0 1.1em var(--buttonColor);
+}
+
+.myButton:disabled, .myButton button[disabled] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.fa-random, .fa-info-circle, .fa-power-off, .fa-code-branch {
+  text-shadow: none;
+  padding: 0 1vw 0 0;
+}
+
+@media (max-width: 1000px) {
+  .myButton {
+    font-size: 1rem;
+    min-width: 9.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .myButton {
+    font-size: 0.5rem;
+    min-height: 3em;
+    min-width: 11.4em;
+  }
+}
+
+@media (max-width: 380px) {
+  .myButton {
+    padding: 0.6em 0.5em;
+    width: 10em;
+  }
+}
+/*# sourceMappingURL=GlowButton.css.map */
