@@ -22,7 +22,7 @@ select {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-shadow: 1px 2px 4px;
-  margin: 0 0.6em 0 0.8em;
+  margin: 0 0.6em 0 0;
   color: var(--buttonColor);
   border: var(--buttonColor) 0.2em solid;
   -webkit-box-shadow: 0 0 0.1em var(--buttonColor), 0 0 0.3em var(--buttonColor);
@@ -37,36 +37,38 @@ select:hover {
           box-shadow: 0 0 0.5em var(--buttonColor), 0 0 0.7em var(--buttonColor), 0 0 1.1em var(--buttonColor);
 }
 
+select:disabled, select button[disabled] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #999999;
+  background-color: #ffffff;
+  color: #666666;
+}
+
 option {
   background-color: var(--buttonColor);
   color: black;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   select {
-    padding: 0.5em;
-    font-size: 1.1rem;
+    padding: 0.5em 1em 0.5em 0.5em;
+    font-size: 1rem;
+    min-width: 9.8em;
   }
 }
 
 @media (max-width: 600px) {
   select {
-    padding: 0.5em 0.0em;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 490px) {
-  select {
-    padding: 1em 0em;
-    font-size: 0.6rem;
+    padding: 0.5em;
+    font-size: 0.55rem;
   }
 }
 
 @media (max-width: 380px) {
   select {
-    padding: 0.6em 0em;
-    width: 10em;
+    padding: 0.6em;
+    width: 11em;
   }
 }
 /*# sourceMappingURL=GlowSelectBox.css.map */
