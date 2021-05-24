@@ -16,7 +16,7 @@ const buildMaxHeap = (dupBlocks, order) => {
     //       not the last node in the array
     // Note: when dealing with heaps, array indexes, by convention, start at 1 and thus why the length 
     //       doesn't have 1 subtracted from it
-    for (let i = Math.floor(dupBlocks.length / 2 - 1); i >= 0; i--) {
+    for (let i = Math.floor(dupBlocks.length / 2); i >= 0; i--) {
         heapify(dupBlocks, i, dupBlocks.length, order)
     }
 }
