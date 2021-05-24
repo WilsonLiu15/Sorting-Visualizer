@@ -1,0 +1,41 @@
+.back {
+    height: calc(100vh - 9.1em);
+    display: flex;
+    justify-content: center;
+    background-color: inherit;
+}
+
+// background and position of container holding blocks
+.blocks {   
+    position: absolute;
+    width: 90vw;
+    text-align: center;
+    margin-top: calc(100vh - 9em - 400px - 14vh);
+    border-bottom: 3px solid white; 
+    align-items: flex-end;
+    justify-content: center;
+}
+
+// controls where the sorted blocks are placed
+.blocks > .block{
+    display: inline-block;      
+    vertical-align: bottom;
+    transition-duration: 140ms;
+    transition-property: height;
+    transition-timing-function:ease-in;
+}
+
+// prevent the transition from shifting the white underline 
+.blockHeight {
+    display: inline-block;
+}
+
+@media(max-width: 920px){ 
+    .back {
+        height: calc(100vh - 14em);
+    }
+
+    .blocks {
+        margin-top: calc(100vh - 9em - 400px - 20vh);
+    }
+}
