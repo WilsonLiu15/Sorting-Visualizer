@@ -1,6 +1,6 @@
 Sorting Visualizer 
 ==================
-This is my take on the famous sorting visualizer with the help of React. It allows you to see how an algorithm is sorted while being able to compare it along with its
+This is my take on the famous sorting visualizer with the help of React. It allows you to see how an algorithm is sorted while being able to compare it to its
 steps to get a more intuative understanding, without using a second tab. 
 
 Algorithms 
