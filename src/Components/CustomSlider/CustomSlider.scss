@@ -1,0 +1,109 @@
+:root {
+    --sliderColor: rgb(0, 255, 255);
+}
+
+.container{
+    display: inline-block;
+    width: 16em;
+    margin-right: 1em;
+    height: 0em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.MuiSlider-thumb, .MuiSlider-rail, .MuiSlider-track, .MuiTypography-root{
+    color: var(--sliderColor);
+
+}
+
+//adjusting the input component 
+.MuiInput-root {
+    width: 40px;
+    border: none;
+
+    &.MuiInput-underline:after {
+        border-bottom-color: var(--sliderColor);
+
+    }
+
+    &.MuiInputBase-root {
+        color: var(--sliderColor);
+
+        > .Mui-disabled {
+            color: grey;
+        }
+    }  
+}
+
+.Mui-disabled {
+    &.MuiSlider-thumb, .MuiSlider-rail, .MuiSlider-track{
+        color: grey;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 11em;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 10em;
+    }
+
+    .MuiTypography-root {
+        &.MuiTypography-body1 {
+            font-size: 0.7rem;
+        }
+    }
+
+    .MuiSlider-root {
+        padding: 10px 0 !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 8em;
+        margin-right: 0;
+    }
+}
+
+// allowing for only  typed input and disabling the manual slider 
+@media (max-width: 330px) {
+    .container {
+        margin-right: 0em;
+        margin-bottom: 3em;
+        width: 4.5em;
+    }
+
+    .MuiSlider-root {
+        > .MuiSlider-thumb, .MuiSlider-rail, .MuiSlider-track, .MuiSlider-thumb{
+            display: none;
+        }
+    }
+
+    .MuiTypography-root {
+        display: none;
+    }
+
+    .MuiGrid-root {
+        &.MuiGrid-spacing-xs-1 {
+            width: calc(100%);
+            margin: 0;
+
+            > .MuiGrid-item {
+                padding: 5px 4px 0px 2px;
+            }
+        }   
+
+        &.MuiGrid-grid-xs-true {
+            max-width: 0;
+        }
+    }
+
+    .MuiInput-root {
+        width: 30px;
+    }
+}
