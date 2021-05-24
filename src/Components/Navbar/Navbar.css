@@ -1,0 +1,81 @@
+nav {
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 4.5em;
+  left: 0;
+  background: #131414;
+  -webkit-box-shadow: 0px 0.3em 1.8em #00B2FF;
+          box-shadow: 0px 0.3em 1.8em #00B2FF;
+}
+
+.sorting-visualizer {
+  margin-top: 0.25em;
+  margin-bottom: auto;
+}
+
+.title {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 0 0 1rem;
+}
+
+.changes {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buttons, .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top, .bottom {
+  margin-top: 0.2em;
+}
+
+@media (max-width: 1480px) {
+  nav {
+    height: 7.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .title {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .changes {
+    right: initial;
+    top: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    height: 10em;
+  }
+  .buttons, .slides {
+    margin-bottom: 1em;
+    display: initial;
+    text-align: center;
+  }
+  .top {
+    padding: 0 0 0.8em 0;
+  }
+  .algorithm {
+    margin-right: 0.25em;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
