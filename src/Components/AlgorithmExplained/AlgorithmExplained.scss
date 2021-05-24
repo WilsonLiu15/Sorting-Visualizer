@@ -1,0 +1,78 @@
+.algorithm-explained-container {
+    & p {
+        color: white;
+        font-family: 'Archivo', sans-serif;
+    }
+}
+
+.description-title {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 2rem;
+    font-weight: 400;
+    color:rgb(0, 195, 255)
+}
+
+.details-steps-container {
+    & p, ol {
+        color: white;
+        list-style-type:decimal;
+        font-family: 'Archivo', sans-serif;
+        text-align: left;
+    }
+
+    & li {
+        margin: 5px 0 0 0;
+    }
+}
+
+.heapTerms {
+    color: white;
+    text-align: left;
+    font-family: 'Archivo', sans-serif;
+}
+
+.details-description-title {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 5px 0 0 0;
+}
+
+.details-description-steps {
+    margin: 5px 0 0 0;
+}
+
+
+// Heap Sort styling 
+.heapImg {
+    height: 10em;
+    width: 17em;
+    display: block;
+    margin: 10px auto;
+}
+
+// Merge sort styling 
+.details-merge-sort {
+    margin-bottom: 0;
+}
+
+.mergeImg {
+    height: 20em;
+    width: 20em;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+@media(max-width: 500px) {
+    .description-title {
+        font-size: 1.2rem;
+    }
+
+    .algorithm-explained-container {
+        font-size: 0.7rem;
+    }
+
+    .details-description-title {
+        font-size: 1rem;
+    }
+}

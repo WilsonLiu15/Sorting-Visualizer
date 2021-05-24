@@ -1,0 +1,109 @@
+.legend-title {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #00c3ff;
+}
+
+.legend-Items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+  padding: 3px;
+  margin: 0;
+}
+
+.legend-Item-color {
+  margin-right: 0.5em;
+  margin-bottom: 10px;
+  float: left;
+  width: 1.3em;
+  height: 2.6em;
+  background-color: aqua;
+}
+
+.legend-Item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.red {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background-image: linear-gradient(red, orange);
+}
+
+.yellow {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(orange));
+  background-image: linear-gradient(yellow, orange);
+}
+
+.green {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lime), to(yellow));
+  background-image: linear-gradient(lime, yellow);
+}
+
+.blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00FFD1), to(#0094FF));
+  background-image: linear-gradient(#00FFD1, #0094FF);
+}
+
+.purple {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(magenta), to(#9921E8));
+  background-image: linear-gradient(magenta, #9921E8);
+}
+
+@media (max-width: 900px) {
+  .legend-Items {
+    padding: 0;
+    margin-top: 5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .legend-Item-color {
+    margin: 0 3px 5px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .legend-Items {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .legend-Items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .legend-Items {
+    font-size: 0.5rem;
+  }
+  .legend-title {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=Legend.css.map */
