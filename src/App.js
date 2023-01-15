@@ -60,7 +60,7 @@ const App = () => {
   const [speed, setSpeed] = useState(() => 100)                                // Hook used to control the speed of the sorting
   const [size, setSize] = useState(() => 40)                                   // Hook used to control the number of elements in the array
   const [quickIndex, setQuickIndex] = useState(() => null)                     // Hook used to show moving index for quicksort 
-  const [hideDetails, setHideDetails] = useState(() => true)                          // Hook used to open and close the details menu 
+  const [hideDetails, setHideDetails] = useState(() => true)                   // Hook used to open and close the details menu 
 
   // Loading the inital array of blocks 
   if (blocks.length === 0) {
