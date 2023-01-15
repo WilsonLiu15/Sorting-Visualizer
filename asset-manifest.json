@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Sorting-Visualizer/static/css/main.26630352.chunk.css",
+    "main.js": "/Sorting-Visualizer/static/js/main.7a6e5787.chunk.js",
+    "main.js.map": "/Sorting-Visualizer/static/js/main.7a6e5787.chunk.js.map",
+    "runtime-main.js": "/Sorting-Visualizer/static/js/runtime-main.c2ee3a53.js",
+    "runtime-main.js.map": "/Sorting-Visualizer/static/js/runtime-main.c2ee3a53.js.map",
+    "static/js/2.bbfe38b9.chunk.js": "/Sorting-Visualizer/static/js/2.bbfe38b9.chunk.js",
+    "static/js/2.bbfe38b9.chunk.js.map": "/Sorting-Visualizer/static/js/2.bbfe38b9.chunk.js.map",
+    "index.html": "/Sorting-Visualizer/index.html",
+    "static/css/main.26630352.chunk.css.map": "/Sorting-Visualizer/static/css/main.26630352.chunk.css.map",
+    "static/js/2.bbfe38b9.chunk.js.LICENSE.txt": "/Sorting-Visualizer/static/js/2.bbfe38b9.chunk.js.LICENSE.txt",
+    "static/media/binaryheap.0556bbe2.PNG": "/Sorting-Visualizer/static/media/binaryheap.0556bbe2.PNG",
+    "static/media/mergesort.014086bf.webp": "/Sorting-Visualizer/static/media/mergesort.014086bf.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2ee3a53.js",
+    "static/js/2.bbfe38b9.chunk.js",
+    "static/css/main.26630352.chunk.css",
+    "static/js/main.7a6e5787.chunk.js"
+  ]
+}
